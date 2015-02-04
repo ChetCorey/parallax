@@ -7,12 +7,24 @@
 
   <title>skrollr - parallax scrolling for the masses</title>
 
-  <link href="examples/fixed-positioning.css" rel="stylesheet" type="text/css" />
-  <link href="examples/main.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/fixed-positioning.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
 </head>
 
-  <body class="<%= page_classes %>">
+<body>
+  <%= yield %>
 
-    <%= yield %>
-  </body>
+  <script type="text/javascript" src="javascripts/skrollr.min.js"></script>
+  <script type="text/javascript">
+  var s = skrollr.init({
+    edgeStrategy: 'set',
+    easing: {
+      WTF: Math.random,
+      inverted: function(p) {
+        return 1-p;
+      }
+    }
+  });
+  </script>
+</body>
 </html>

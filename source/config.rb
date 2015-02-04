@@ -71,14 +71,8 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-def mover(data_start, data_end, horziontal_shift, virtical_shift,)
 
+100.times do |i|
+  puts "data-#{300+4*i}=\"transform:scale(#{(1-i/120.0).round(2)})\";"
+  puts"data-#{302+4*i}=\"top:#{20-i/4}%;\""
 end
-
-
-# 
-# 100.times do |i|
-#   print "data-#{300+3*i}=\"transform:scale(#{(1-i/120.0).round(2)})\";
-#   data-#{301+3*i}=\"top:#{30-i/3}%;\"
-#   data-#{302+3*i}=\"left:#{40-i/3}%;\" "
-# end

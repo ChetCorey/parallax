@@ -1,86 +1,69 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
 
-	<title>skrollr - parallax scrolling for the masses</title>
+<div id="progress"
+	data-0="width:0%;background:hsl(200, 100%, 50%);"
+	data-end="width:100%;background:hsl(920, 100%, 50%);">
+</div>
 
-	<link href="stylesheets/fixed-positioning.css" rel="stylesheet" type="text/css" />
-	<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
-</head>
+<div id="intro"
+	data-0="opacity:1;top:3%"
+	data-500="opacity:0;top:-10%">
+	<h1><a href="https://github.com/Prinzhorn/skrollr">skrollr</a></h1>
+	<h2>parallax scrolling for the masses</h2>
+</div>
 
-<body>
-	<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
-	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
-	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+<div id="icon"
+	data-300="transform:scale(1.0)"; data-301="top:30%;" data-302="left:40%;" data-303="transform:scale(0.99)"; data-304="top:30%;" data-305="left:40%;" data-306="transform:scale(0.98)"; data-307="top:30%;" data-308="left:40%;" data-309="transform:scale(0.98)"; data-310="top:29%;" data-311="left:39%;" data-312="transform:scale(0.97)"; data-313="top:29%;" data-314="left:39%;" data-315="transform:scale(0.96)"; data-316="top:29%;" data-317="left:39%;" data-318="transform:scale(0.95)"; data-319="top:28%;" data-320="left:38%;" data-321="transform:scale(0.94)"; data-322="top:28%;" data-323="left:38%;" data-324="transform:scale(0.93)"; data-325="top:28%;" data-326="left:38%;" data-327="transform:scale(0.93)"; data-328="top:27%;" data-329="left:37%;" data-330="transform:scale(0.92)"; data-331="top:27%;" data-332="left:37%;" data-333="transform:scale(0.91)"; data-334="top:27%;" data-335="left:37%;" data-336="transform:scale(0.9)"; data-337="top:26%;" data-338="left:36%;" data-339="transform:scale(0.89)"; data-340="top:26%;" data-341="left:36%;" data-342="transform:scale(0.88)"; data-343="top:26%;" data-344="left:36%;" data-345="transform:scale(0.88)"; data-346="top:25%;" data-347="left:35%;" data-348="transform:scale(0.87)"; data-349="top:25%;" data-350="left:35%;" data-351="transform:scale(0.86)"; data-352="top:25%;" data-353="left:35%;" data-354="transform:scale(0.85)"; data-355="top:24%;" data-356="left:34%;" data-357="transform:scale(0.84)"; data-358="top:24%;" data-359="left:34%;" data-360="transform:scale(0.83)"; data-361="top:24%;" data-362="left:34%;" data-363="transform:scale(0.83)"; data-364="top:23%;" data-365="left:33%;" data-366="transform:scale(0.82)"; data-367="top:23%;" data-368="left:33%;" data-369="transform:scale(0.81)"; data-370="top:23%;" data-371="left:33%;" data-372="transform:scale(0.8)"; data-373="top:22%;" data-374="left:32%;" data-375="transform:scale(0.79)"; data-376="top:22%;" data-377="left:32%;" data-378="transform:scale(0.78)"; data-379="top:22%;" data-380="left:32%;" data-381="transform:scale(0.78)"; data-382="top:21%;" data-383="left:31%;" data-384="transform:scale(0.77)"; data-385="top:21%;" data-386="left:31%;" data-387="transform:scale(0.76)"; data-388="top:21%;" data-389="left:31%;" data-390="transform:scale(0.75)"; data-391="top:20%;" data-392="left:30%;" data-393="transform:scale(0.74)"; data-394="top:20%;" data-395="left:30%;" data-396="transform:scale(0.73)"; data-397="top:20%;" data-398="left:30%;" data-399="transform:scale(0.73)"; data-400="top:19%;" data-401="left:29%;" data-402="transform:scale(0.72)"; data-403="top:19%;" data-404="left:29%;" data-405="transform:scale(0.71)"; data-406="top:19%;" data-407="left:29%;" data-408="transform:scale(0.7)"; data-409="top:18%;" data-410="left:28%;" data-411="transform:scale(0.69)"; data-412="top:18%;" data-413="left:28%;" data-414="transform:scale(0.68)"; data-415="top:18%;" data-416="left:28%;" data-417="transform:scale(0.68)"; data-418="top:17%;" data-419="left:27%;" data-420="transform:scale(0.67)"; data-421="top:17%;" data-422="left:27%;" data-423="transform:scale(0.66)"; data-424="top:17%;" data-425="left:27%;" data-426="transform:scale(0.65)"; data-427="top:16%;" data-428="left:26%;" data-429="transform:scale(0.64)"; data-430="top:16%;" data-431="left:26%;" data-432="transform:scale(0.63)"; data-433="top:16%;" data-434="left:26%;" data-435="transform:scale(0.63)"; data-436="top:15%;" data-437="left:25%;" data-438="transform:scale(0.62)"; data-439="top:15%;" data-440="left:25%;" data-441="transform:scale(0.61)"; data-442="top:15%;" data-443="left:25%;" data-444="transform:scale(0.6)"; data-445="top:14%;" data-446="left:24%;" data-447="transform:scale(0.59)"; data-448="top:14%;" data-449="left:24%;" data-450="transform:scale(0.58)"; data-451="top:14%;" data-452="left:24%;" data-453="transform:scale(0.57)"; data-454="top:13%;" data-455="left:23%;" data-456="transform:scale(0.57)"; data-457="top:13%;" data-458="left:23%;" data-459="transform:scale(0.56)"; data-460="top:13%;" data-461="left:23%;" data-462="transform:scale(0.55)"; data-463="top:12%;" data-464="left:22%;" data-465="transform:scale(0.54)"; data-466="top:12%;" data-467="left:22%;" data-468="transform:scale(0.53)"; data-469="top:12%;" data-470="left:22%;" data-471="transform:scale(0.53)"; data-472="top:11%;" data-473="left:21%;" data-474="transform:scale(0.52)"; data-475="top:11%;" data-476="left:21%;" data-477="transform:scale(0.51)"; data-478="top:11%;" data-479="left:21%;" data-480="transform:scale(0.5)"; data-481="top:10%;" data-482="left:20%;" data-483="transform:scale(0.49)"; data-484="top:10%;" data-485="left:20%;" data-486="transform:scale(0.48)"; data-487="top:10%;" data-488="left:20%;" data-489="transform:scale(0.48)"; data-490="top:9%;" data-491="left:19%;" data-492="transform:scale(0.47)"; data-493="top:9%;" data-494="left:19%;" data-495="transform:scale(0.46)"; data-496="top:9%;" data-497="left:19%;" data-498="transform:scale(0.45)"; data-499="top:8%;" data-500="left:18%;" data-501="transform:scale(0.44)"; data-502="top:8%;" data-503="left:18%;" data-504="transform:scale(0.43)"; data-505="top:8%;" data-506="left:18%;" data-507="transform:scale(0.43)"; data-508="top:7%;" data-509="left:17%;" data-510="transform:scale(0.42)"; data-511="top:7%;" data-512="left:17%;" data-513="transform:scale(0.41)"; data-514="top:7%;" data-515="left:17%;" data-516="transform:scale(0.4)"; data-517="top:6%;" data-518="left:16%;" data-519="transform:scale(0.39)"; data-520="top:6%;" data-521="left:16%;" data-522="transform:scale(0.38)"; data-523="top:6%;" data-524="left:16%;" data-525="transform:scale(0.38)"; data-526="top:5%;" data-527="left:15%;" data-528="transform:scale(0.37)"; data-529="top:5%;" data-530="left:15%;" data-531="transform:scale(0.36)"; data-532="top:5%;" data-533="left:15%;" data-534="transform:scale(0.35)"; data-535="top:4%;" data-536="left:14%;" data-537="transform:scale(0.34)"; data-538="top:4%;" data-539="left:14%;" data-540="transform:scale(0.33)"; data-541="top:4%;" data-542="left:14%;" data-543="transform:scale(0.32)"; data-544="top:3%;" data-545="left:13%;" data-546="transform:scale(0.32)"; data-547="top:3%;" data-548="left:13%;" data-549="transform:scale(0.31)"; data-550="top:3%;" data-551="left:13%;" data-552="transform:scale(0.3)"; data-553="top:2%;" data-554="left:12%;" data-555="transform:scale(0.29)"; data-556="top:2%;" data-557="left:12%;" data-558="transform:scale(0.28)"; data-559="top:2%;" data-560="left:12%;" data-561="transform:scale(0.28)"; data-562="top:1%;" data-563="left:11%;" data-564="transform:scale(0.27)"; data-565="top:1%;" data-566="left:11%;" data-567="transform:scale(0.26)"; data-568="top:1%;" data-569="left:11%;" data-570="transform:scale(0.25)"; data-571="top:0%;" data-572="left:10%;" data-573="transform:scale(0.24)"; data-574="top:0%;" data-575="left:10%;" data-576="transform:scale(0.23)"; data-577="top:0%;" data-578="left:10%;" data-579="transform:scale(0.22)"; data-580="top:-1%;" data-581="left:9%;" data-582="transform:scale(0.22)"; data-583="top:-1%;" data-584="left:9%;" data-585="transform:scale(0.21)"; data-586="top:-1%;" data-587="left:9%;" data-588="transform:scale(0.2)"; data-589="top:-2%;" data-590="left:8%;" data-591="transform:scale(0.19)"; data-592="top:-2%;" data-593="left:8%;" data-594="transform:scale(0.18)"; data-595="top:-2%;" data-596="left:8%;" data-597="transform:scale(0.18)"; data-598="top:-3%;" data-599="left:7%;">
+</div>
 
-	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+<div id="properties"
+	data-1700="top:100%;"
+	data-2200="top:0%;"
+	data-3000="display:block;"
+	data-3700="top:-100%;display:none;">
+	<h2>all numeric properties</h2>
+	<p>width, height, padding, font-size, z-index, blah blah blah</p>
+</div>
 
-	<div id="intro" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
-		<h1><a href="https://github.com/Prinzhorn/skrollr">skrollr</a></h1>
-		<h2>parallax scrolling for the masses</h2>
-		<p>let's get scrollin' ;-)</p>
-		<p class="arrows">▼&nbsp;▼&nbsp;▼</p>
+<div id="easing_wrapper"
+	data-0="display:none;"
+	data-3900="display:block;"
+	data-4900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);"
+	data-5900="background:rgba(0,0,0,1);color:rgb(255,255,255);"
+	data-10000="top:0%;"
+	data-12000="top:-100%;">
+	<div id="easing"
+		data-3900="left:100%"
+		data-4600="left:25%;">
+		<h2>easing?</h2>
+		<p>sure.</p>
+		<p>let me dim the <span data-3900=""
+				data-4900="color[swing]:rgb(0,0,0);"
+				data-5900="color:rgb(255,255,0);">lights</span> for this one...</p>
+		<p data-5900="opacity:0;font-size:100%;"
+			data-6500="opacity:1;font-size:150%;">you can set easings for each property and define own easing functions</p>
 	</div>
 
-	<div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1700="transform:scale(5) rotate(3240deg);opacity:0;">
-		<h2>transform</h2>
-		<p>scale, skew and rotate the sh** out of any element</p>
-	</div>
+	<div class="drop" data-6500="left:15%;bottom:100%;" data-9500="bottom:0%;">linear</div>
+	<div class="drop" data-6500="left:25%;bottom[quadratic]:100%;" data-9500="bottom:0%;">quadratic</div>
+	<div class="drop" data-6500="left:35%;bottom[cubic]:100%;" data-9500="bottom:0%;">cubic</div>
+	<div class="drop" data-6500="left:45%;bottom[swing]:100%;" data-9500="bottom:0%;">swing</div>
+	<div class="drop" data-6500="left:55%;bottom[WTF]:100%;" data-9500="bottom:0%;">WTF</div>
+	<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
+	<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div>
+</div>
 
-	<div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
-		<h2>all numeric properties</h2>
-		<p>width, height, padding, font-size, z-index, blah blah blah</p>
-	</div>
+<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
+	<h2>the end</h2>
+	<p>by the way, you can also animate colors (you did notice this, didn't you?)</p>
+	<p><strong>Now get this thing on <a href="https://github.com/Prinzhorn/skrollr">GitHub</a> and spread the word, it's open source!</strong> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://prinzhorn.github.com/skrollr/" data-via="Prinzhorn">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+	<p>Check out more <a href="https://github.com/Prinzhorn/skrollr/tree/master/examples#examples">examples</a>.</p>
+	<p>Handcrafted by <a href="https://twitter.com/Prinzhorn" class="twitter-follow-button" data-show-count="false">Follow @Prinzhorn</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+</div>
 
-	<div id="easing_wrapper" data-0="display:none;" data-3900="display:block;" data-4900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-5900="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
-		<div id="easing" data-3900="left:100%" data-4600="left:25%;">
-			<h2>easing?</h2>
-			<p>sure.</p>
-			<p>let me dim the <span data-3900="" data-4900="color[swing]:rgb(0,0,0);" data-5900="color:rgb(255,255,0);">lights</span> for this one...</p>
-			<p data-5900="opacity:0;font-size:100%;" data-6500="opacity:1;font-size:150%;">you can set easings for each property and define own easing functions</p>
-		</div>
-
-		<div class="drop" data-6500="left:15%;bottom:100%;" data-9500="bottom:0%;">linear</div>
-		<div class="drop" data-6500="left:25%;bottom[quadratic]:100%;" data-9500="bottom:0%;">quadratic</div>
-		<div class="drop" data-6500="left:35%;bottom[cubic]:100%;" data-9500="bottom:0%;">cubic</div>
-		<div class="drop" data-6500="left:45%;bottom[swing]:100%;" data-9500="bottom:0%;">swing</div>
-		<div class="drop" data-6500="left:55%;bottom[WTF]:100%;" data-9500="bottom:0%;">WTF</div>
-		<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
-		<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div>
-	</div>
-
-	<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
-		<h2>the end</h2>
-		<p>by the way, you can also animate colors (you did notice this, didn't you?)</p>
-		<p><strong>Now get this thing on <a href="https://github.com/Prinzhorn/skrollr">GitHub</a> and spread the word, it's open source!</strong> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://prinzhorn.github.com/skrollr/" data-via="Prinzhorn">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-		<p>Check out more <a href="https://github.com/Prinzhorn/skrollr/tree/master/examples#examples">examples</a>.</p>
-		<p>Handcrafted by <a href="https://twitter.com/Prinzhorn" class="twitter-follow-button" data-show-count="false">Follow @Prinzhorn</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-	</div>
-
-	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
-
-	<script type="text/javascript" src="javascripts/skrollr.min.js"></script>
-
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
-	<![endif]-->
-
-	<script type="text/javascript">
-	var s = skrollr.init({
-		edgeStrategy: 'set',
-		easing: {
-			WTF: Math.random,
-			inverted: function(p) {
-				return 1-p;
-			}
-		}
-	});
-	</script>
-</body>
-
-</html>
+<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>

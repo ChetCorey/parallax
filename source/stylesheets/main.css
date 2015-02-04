@@ -141,13 +141,12 @@ h4 {
 	color:#09f;
 }
 
-#transform {
-	width:70%;
-	left:50%;
+#icon {
+	background: url(../images/chetround.png) center no-repeat;
+	height: 279px;
+	width: 279px;
 	top:20%;
-	margin-left:-35%;
-	text-align:center;
-	font-size:150%;
+	margin: auto;
 
 	.transform-origin(50%, 50%);
 }
